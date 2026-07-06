@@ -1,0 +1,2 @@
+SELECT SERVERPROPERTY('InstanceDefaultDataPath')
+SELECT SERVERPROPERTY('InstanceDefaultLogPath')
