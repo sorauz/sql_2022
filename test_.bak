@@ -1,0 +1,2 @@
+RESTORE FILELISTONLY
+FROM DISK='D:\Backup\Accounting.bak'
