@@ -1,0 +1,12 @@
+RESTORE DATABASE BK
+FROM DISK='D:\Backup\Accounting.bak'
+WITH
+MOVE 'BK'
+TO 'C:\Program Files\Microsoft SQL Server\MSSQL17.SQLEXPRESS\MSSQL\DATA\BK.mdf',
+
+MOVE 'BK_log'
+TO 'C:\Program Files\Microsoft SQL Server\MSSQL17.SQLEXPRESS\MSSQL\DATA\BK_log.ldf',
+
+RECOVERY,
+REPLACE,
+STATS=10;
